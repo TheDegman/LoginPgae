@@ -12,7 +12,8 @@ namespace LoginPgae
         {
             InitializeComponent();
             LoginPanel.BackColor= Color.FromArgb(125,Color.Black);
-            
+            SignUp.BackColor = Color.FromArgb(125, Color.Black);
+
             LoginBtn.BackColor = Color.FromArgb(125, Color.White);
 
 
@@ -22,16 +23,22 @@ namespace LoginPgae
 
 
         }
+       
 
-        private void button1_Click(object sender, EventArgs e)
+
+
+
+
+        private void Link2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Close();
+            LoginPanel.BringToFront();
+            
 
         }
 
-        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void Link1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-
+            SignUp.BringToFront();
         }
     }
 }

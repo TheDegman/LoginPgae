@@ -31,28 +31,27 @@ namespace LoginPgae
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.LoginPanel = new System.Windows.Forms.Panel();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.Link1 = new System.Windows.Forms.LinkLabel();
             this.label1 = new System.Windows.Forms.Label();
             this.RememberMe = new System.Windows.Forms.CheckBox();
             this.LoginUsername = new LoginPgae.Controls.TextBox();
             this.LoginPassword = new LoginPgae.Controls.TextBox();
             this.LoginBtn = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.linkLabel2 = new System.Windows.Forms.LinkLabel();
+            this.SignUp = new System.Windows.Forms.Panel();
+            this.textBox3 = new LoginPgae.Controls.TextBox();
+            this.Link2 = new System.Windows.Forms.LinkLabel();
             this.label2 = new System.Windows.Forms.Label();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.textBox1 = new LoginPgae.Controls.TextBox();
             this.textBox2 = new LoginPgae.Controls.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.LoginPanel.SuspendLayout();
-            this.panel1.SuspendLayout();
+            this.SignUp.SuspendLayout();
             this.SuspendLayout();
             // 
             // LoginPanel
             // 
             this.LoginPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(122)))), ((int)(((byte)(145)))));
-            this.LoginPanel.Controls.Add(this.panel1);
-            this.LoginPanel.Controls.Add(this.linkLabel1);
+            this.LoginPanel.Controls.Add(this.Link1);
             this.LoginPanel.Controls.Add(this.label1);
             this.LoginPanel.Controls.Add(this.RememberMe);
             this.LoginPanel.Controls.Add(this.LoginUsername);
@@ -63,19 +62,19 @@ namespace LoginPgae
             this.LoginPanel.Size = new System.Drawing.Size(312, 308);
             this.LoginPanel.TabIndex = 0;
             // 
-            // linkLabel1
+            // Link1
             // 
-            this.linkLabel1.ActiveLinkColor = System.Drawing.Color.Blue;
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.ForeColor = System.Drawing.Color.White;
-            this.linkLabel1.LinkColor = System.Drawing.Color.White;
-            this.linkLabel1.Location = new System.Drawing.Point(126, 260);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(69, 15);
-            this.linkLabel1.TabIndex = 10;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Register Me";
-            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            this.Link1.ActiveLinkColor = System.Drawing.Color.Blue;
+            this.Link1.AutoSize = true;
+            this.Link1.ForeColor = System.Drawing.Color.White;
+            this.Link1.LinkColor = System.Drawing.Color.White;
+            this.Link1.Location = new System.Drawing.Point(126, 260);
+            this.Link1.Name = "Link1";
+            this.Link1.Size = new System.Drawing.Size(69, 15);
+            this.Link1.TabIndex = 10;
+            this.Link1.TabStop = true;
+            this.Link1.Text = "Register Me";
+            this.Link1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.Link1_LinkClicked);
             // 
             // label1
             // 
@@ -150,34 +149,52 @@ namespace LoginPgae
             this.LoginBtn.TabIndex = 4;
             this.LoginBtn.Text = "Login";
             this.LoginBtn.UseVisualStyleBackColor = false;
-            this.LoginBtn.Click += new System.EventHandler(this.button1_Click);
             // 
-            // panel1
+            // SignUp
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(122)))), ((int)(((byte)(145)))));
-            this.panel1.Controls.Add(this.linkLabel2);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.checkBox1);
-            this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Controls.Add(this.textBox2);
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Location = new System.Drawing.Point(0, -1);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(312, 308);
-            this.panel1.TabIndex = 11;
+            this.SignUp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(122)))), ((int)(((byte)(145)))));
+            this.SignUp.Controls.Add(this.textBox3);
+            this.SignUp.Controls.Add(this.Link2);
+            this.SignUp.Controls.Add(this.label2);
+            this.SignUp.Controls.Add(this.textBox1);
+            this.SignUp.Controls.Add(this.textBox2);
+            this.SignUp.Controls.Add(this.button1);
+            this.SignUp.Location = new System.Drawing.Point(332, 126);
+            this.SignUp.Name = "SignUp";
+            this.SignUp.Size = new System.Drawing.Size(312, 308);
+            this.SignUp.TabIndex = 11;
             // 
-            // linkLabel2
+            // textBox3
             // 
-            this.linkLabel2.ActiveLinkColor = System.Drawing.Color.Blue;
-            this.linkLabel2.AutoSize = true;
-            this.linkLabel2.ForeColor = System.Drawing.Color.White;
-            this.linkLabel2.LinkColor = System.Drawing.Color.White;
-            this.linkLabel2.Location = new System.Drawing.Point(126, 260);
-            this.linkLabel2.Name = "linkLabel2";
-            this.linkLabel2.Size = new System.Drawing.Size(69, 15);
-            this.linkLabel2.TabIndex = 10;
-            this.linkLabel2.TabStop = true;
-            this.linkLabel2.Text = "Register Me";
+            this.textBox3.BackColor = System.Drawing.Color.White;
+            this.textBox3.BorderColor = System.Drawing.Color.Navy;
+            this.textBox3.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.textBox3.BorderSize = 4;
+            this.textBox3.Font = new System.Drawing.Font("Segoe UI", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBox3.Location = new System.Drawing.Point(43, 165);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox3.Multiline = false;
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Padding = new System.Windows.Forms.Padding(7);
+            this.textBox3.PasswordChar = false;
+            this.textBox3.Size = new System.Drawing.Size(227, 32);
+            this.textBox3.TabIndex = 11;
+            this.textBox3.Texts = "Password";
+            this.textBox3.UnderlinedStyle = true;
+            // 
+            // Link2
+            // 
+            this.Link2.ActiveLinkColor = System.Drawing.Color.Blue;
+            this.Link2.AutoSize = true;
+            this.Link2.ForeColor = System.Drawing.Color.White;
+            this.Link2.LinkColor = System.Drawing.Color.White;
+            this.Link2.Location = new System.Drawing.Point(134, 262);
+            this.Link2.Name = "Link2";
+            this.Link2.Size = new System.Drawing.Size(43, 15);
+            this.Link2.TabIndex = 10;
+            this.Link2.TabStop = true;
+            this.Link2.Text = "Sign In";
+            this.Link2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.Link2_LinkClicked);
             // 
             // label2
             // 
@@ -185,23 +202,11 @@ namespace LoginPgae
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(112, 15);
+            this.label2.Location = new System.Drawing.Point(106, 16);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(111, 37);
             this.label2.TabIndex = 0;
             this.label2.Text = "Sign Up";
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.BackColor = System.Drawing.Color.Transparent;
-            this.checkBox1.ForeColor = System.Drawing.Color.White;
-            this.checkBox1.Location = new System.Drawing.Point(106, 173);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(104, 19);
-            this.checkBox1.TabIndex = 9;
-            this.checkBox1.Text = "Remember Me";
-            this.checkBox1.UseVisualStyleBackColor = false;
             // 
             // textBox1
             // 
@@ -246,11 +251,11 @@ namespace LoginPgae
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button1.Location = new System.Drawing.Point(58, 207);
+            this.button1.Location = new System.Drawing.Point(56, 212);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(202, 32);
             this.button1.TabIndex = 4;
-            this.button1.Text = "Login";
+            this.button1.Text = "Register";
             this.button1.UseVisualStyleBackColor = false;
             // 
             // Login
@@ -262,12 +267,13 @@ namespace LoginPgae
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1009, 556);
             this.Controls.Add(this.LoginPanel);
+            this.Controls.Add(this.SignUp);
             this.Name = "Login";
             this.Text = "Form1";
             this.LoginPanel.ResumeLayout(false);
             this.LoginPanel.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.SignUp.ResumeLayout(false);
+            this.SignUp.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -280,14 +286,14 @@ namespace LoginPgae
         private Controls.TextBox LoginPassword;
         private System.Windows.Forms.CheckBox RememberMe;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.LinkLabel linkLabel1;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.LinkLabel linkLabel2;
+        private System.Windows.Forms.LinkLabel Link1;
+        private System.Windows.Forms.Panel SignUp;
+        private System.Windows.Forms.LinkLabel Link2;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.CheckBox checkBox1;
         private Controls.TextBox textBox1;
         private Controls.TextBox textBox2;
         private System.Windows.Forms.Button button1;
+        private Controls.TextBox textBox3;
     }
 }
 
